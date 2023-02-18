@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica;
+  font-family: 'Poppins', sans-serif;
 }
 
 header{
-  background-image: url(images/bg1.png);
-  height: 100vh;
+  background-color: #ffff;
   background-size: cover;
   background-position: center;
 }
@@ -76,6 +75,7 @@ header{
   background: #FFF1F1;
   height: 60px;
   width: auto;
+  box-shadow: 0px 5px 5px gray;
 } 
 
 .container .navbar ul li a.active{
@@ -152,8 +152,148 @@ outline: none;
   border: none; 
   background-color: #Ffff;
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: calibri;
   width: 330px;
   outline: none;
+}
+
+.body {
+  background-color: #fff1f1;
+  min-height: 100vh;
+  padding: 10% 5%;
+}
+
+.row {
+  display: block;
+}
+
+.col {
+  width: 100%;
+}
+
+.header {
+  color: #e43737;
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+
+.description {
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.red-btn {
+  background-color: #e43737;
+  transition: all 200ms ease;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 12px 25px;
+  border: 0;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.red-btn:hover {
+  background-color: black;
+}
+
+.col > img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 20%;
+}
+
+.col-4 {
+  margin-top: 50px;
+}
+
+.col-4 > img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 16px;
+  object-fit: cover;
+}
+
+.col-4 > h3 {
+  color: #e43737;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.w-50 {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+@media(min-width: 479px) {
+  .col-4 > p {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 767px) {
+  .col-4 > p {
+    width: 60% !important;
+  }
+}
+
+
+@media(min-width: 991px) {
+
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 50%;
+    padding: 3%;
+  }
+
+  .col-4 {
+    width: 40%;
+    margin: 1%;
+  }
+
+  .content {
+    margin-top: 11%;
+  }
+
+  .content-mt-50 {
+    margin-top: 50%;
+  }
+
+  .col-4 > p {
+    width: 100% !important;
+  }
+}
+
+@media(min-width: 1200px) {
+  .col-4 > p {
+    width: 50%;
+  }
 }
 
