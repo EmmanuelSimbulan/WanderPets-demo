@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html xmlns:th="https://www.thymeleaf.org" lang="en" dir="ltr">
+  <head>
+    <title>Wander Pets | Login</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="loginpanel">
-        <div class="txt">
-          <input id="user" type="text" placeholder="Username" />
-          <label for="user" class="entypo-user"></label>
+    <!---<title> Responsive Login Form | CodingLab </title>--->
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <img class="backimg" src="images/left.png" onclick="history.back()"></img>
+      <form action="#">
+        <div class="title">LOGIN</div>
+        <div class="input-box underline">
+          <input type="text" placeholder="Enter Your Email" required>
+          <div class="underline"></div>
         </div>
-        <div class="txt">
-          <input id="pwd" type="password" placeholder="Password" />
-          <label for="pwd" class="entypo-lock"></label>
+        <div class="input-box">
+          <input type="password" placeholder="Enter Your Password" required>
+          <div class="underline"></div>
         </div>
-        <div class="buttons">
-          <input type="button" value="Login" />
-          <span>
-            <a href="javascript:void(0)" class="entypo-user-add register">Register</a>
-          </span>
+        <div class="input-box button">
+          <input type="submit" name="" value="LOGIN">
         </div>
-        
-        <div class="hr">
-          <div></div>
-          <div>OR</div>
-          <div></div>
+      </form>
+        <div class="option"><span>or</span></div>
+        <div class="google">
+          <a href="#"><i class="fab fa-google"></i>Login With Google</a>
         </div>
-        
-        <div class="social">
-          <a href="javascript:void(0)" class="facebook"></a>
-          <a href="javascript:void(0)" class="twitter"></a>
-          <a href="javascript:void(0)" class="googleplus"></a>
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i>Login With Facebook</a>
         </div>
-      </div>
-      
-      <span class="resp-info"></span>
-</body>
+        <div class="register">Don't have an adopter account? <a href="signup">Register Here</a></div>
+    </div>
+  </body>
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f3f634f-5c6a-418d-b8d2-e73c72b3a7d0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </html>
+

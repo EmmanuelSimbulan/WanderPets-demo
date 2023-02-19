@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html xmlns:th="https://www.thymeleaf.org" lang="en" dir="ltr">
+  <head>
+    <title>Wander Pets | Signup</title>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Login Form | CodingLab </title>--->
+    <link rel="stylesheet" href="signupstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="container">
+      <img class="backimg" src="images/left.png" onclick="history.back()"></img>
+      <form action="#">
+        <div class="title">REGISTRATION</div>
+        <div class="input-box underline">
+            <input type="text" placeholder="First Name" required>
+            <div class="underline"></div>
+          </div>
+          <div class="input-box underline">
+            <input type="text" placeholder="Last Name" required>
+            <div class="underline"></div>
+          </div>
+        <div class="input-box underline">
+          <input type="text" placeholder="Enter Your Email" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box underline">
+            <input type="tel" placeholder="Enter Your Phone Numer" required>
+            <div class="underline"></div>
+          </div>
+        <div class="input-box">
+          <input type="password" placeholder="Enter Your Password" required>
+          <div class="underline"></div>
+        </div>
+        <div></div>
+        <div class="checking">
+            <input type="checkbox" id="terms" name="terms" value="term">
+            <label for="vehicle1">I AGREE TO PERSONAL DATA PROTECTION TERM</label><br>
+        </div>
+        <div class="input-box button">
+          <input type="submit" name="" value="SIGN UP">
+        </div>
+      </form>
+        <div class="option"><span>or</span></div>
+        <div class="google">
+          <a href="#" id="googleLink"><i class="fab fa-google"></i>Continue With Google</a>
+        </div>
+        <div class="facebook">
+          <a href="#" ><i class="fab fa-facebook-f"></i>Continue With Facebook</a>
+        </div>
+        <div class="register">Already have an adopter account? <a href="login">Login Here</a></div>
+    </div>
+  </body>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import {getAuth, GoogleAuthProvider, signInWithRedirect, getRedirectResult } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA_pUAusRm0DIMnbdTwTaLaQ7JKdbvJZfc",
+      authDomain: "wander-pets-database.firebaseapp.com",
+      projectId: "wander-pets-database",
+      storageBucket: "wander-pets-database.appspot.com",
+      messagingSenderId: "657355847118",
+      appId: "1:657355847118:web:55ff03b073c9ca113c679f"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const provider = new GoogleAuthProvider(app);
+    const auth = getAuth(app);
+
+    var googleBtn = document.getElementById("GoogleLink");
+
+    googleBtn.addEventListener('click', (e) => {
+
+        signInWithRedirect(auth, provider);
+
+        const auth = getAuth();
+getRedirectResult(auth)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access Google APIs.
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+
+    // The signed-in user info.
+    const user = result.user;
+    // IdP data available using getAdditionalUserInfo(result)
+    // ...
+
+    alert(user.displayName);
+
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    // ...
+  });
+
+
+    } );
+
+  </script>
+      <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f3f634f-5c6a-418d-b8d2-e73c72b3a7d0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+</html>
+

@@ -80,6 +80,14 @@ html, body{
   transform: scaleX(1);
   transform-origin: left;
 }
+.container form .checking{
+    position: absolute;
+    height: 2px;
+    width: 100%
+}
+.checking label{
+    font-size: 12px;
+}
 .container form .button{
   margin: 40px 0 20px 0;
 }
