@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Pets | Rescue </title>
+  <link href="res.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="search">
+        <input type="search" placeholder="Search">
+        <i class="uil uil-search search-icon"></i>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li> <a href="index">Home</a></li>
+          <li> <a href="vol">Volunteer</a></li>
+          <li> <a href="adopt">Tips&Recommendations</a></li>
+          <li> <a href="events/events.html">Events</a></li>
+          <li> <a href="adopt/adopt">Adoption</a></li>
+          <li> <a class="active" href="res">Rescue</a></li>
+        </ul>
+      </div>
+    </div>
+ 
+<div class="feed">
+<span class="feed-text">RESCUE FEED</span>
+  <div class="post">
+    <div class="user-profile">
+      <img src="images/res/profile.png">
+    </div>
+    <button id="open-modal-button" class="modbtn">Report Animal Abuse or Lost and Found pets</button>
+    
+  <!--<div class="post-input-container">Report Animal Abuse or Lost and Found pets </div>-->
+    <!--<input type="post" placeholder="Report Animal Abuse or Lost and Found pets" > -->
+  </div>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Create a Post</h2>
+    <form>
+    <!-- <textarea id="post-text" name="post-text" placeholder="What do you want to report?" required> </textarea>--> 
+      <textarea class="input" id="post-text" onkeyup="success()" name="demo" placeholder="What do you want to report?" required ></textarea>
+      <div class="options">
+        <p>Add to Your Post</p>
+          <ul class="list">
+            <li><img src="/images/res/location.png" alt="gallery"></li>
+            <input type="text" id="postLocation" name="postLocation" class="location">
+            <li><img src="/images/res/photo.png" alt="Photo"></li>
+            <input type="file" id="postPhoto" name="postPhoto">
+          </ul>
+      </div>
+      <button type="submit" id="post-button" disabled>Post</button>
+    </form>
+  </div>
+</div>
+
+<div id="post-container">
+  <!-- Posts will be added here dynamically -->
+  
+</div>
+  
+</div>
+<footer>
+    <div class="row">
+      <div class="col">
+        <h2> WANDER PETS</h2>
+        <div class="address"
+        <p>
+          G/F Rainbow Building, 1624 P I Y Margal Street, Sampaloc, Metro Manila
+        </p>
+        </div>
+        <p class="contact"> <i class="uil uil-phone"></i> +639 216 6570 32</p>
+        <p class="email-id"> <i class="uil uil-envelope"> </i> WanderPets@gmail.com</p>
+      </div>
+      <div class="Connect">
+        <h3> Connect With Other Organizations</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/PUPSintangPusa/">PUP Sintang Pusa</a></li>
+          <li><a href="https://akf.org.ph/">Animal Kingdom Foundation</a></li>
+          <li><a href="https://straysworthsaving.org/">Strays Worth Saving (SWS)</a></li>
+          <li><a href="https://www.facebook.com/GuardiansOfTheFur/">Guardians of the fur</a></li>
+          <li><a href="https://paws.org.ph/">Philippine Animal Welfare Society (PAWS)</a></li>
+          <li><a href="https://www.petaasia.com/">People for the Ethical Treatment of Animals (PETA) Asia-Pacific</a>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h3>About Us</h3>
+        <p>Our Story</p>
+        <p>Our Team</p>
+      </div>
+      <div class="social">
+        <h3>FOLLOW US</h3>
+        <i class="fab uil uil-instagram-alt"></i>
+        <i class="fab uil uil-facebook"></i>
+        <i class="fab uil uil-twitter"></i>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright"> &copy 2023 Wander Pets Organizations. All rights reserved. </p>
+  </footer>
+  </header>
+
+  <!--   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>  -->
+  <script src="res.js"></script>
+</body>
+
+</html>
