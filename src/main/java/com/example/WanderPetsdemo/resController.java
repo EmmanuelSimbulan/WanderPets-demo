@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class resController {
 
 	@GetMapping("/res")
-	public String volunteer() {
+	public String res() {
 		return "res";
 	}
 
