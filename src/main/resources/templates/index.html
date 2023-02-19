@@ -1,67 +1,135 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Wander Pets | Home</title>
-      <link href="style.css" rel="stylesheet"/>
-      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    </head>
-    
-    <body>
-      <header>
-        <div class="container">
-           <div class="search">
-            <input type="search" placeholder="Search">
-            <i class="uil uil-search search-icon"></i>
-          </div>
-           <div class="navbar">
-            <ul>
-              <li> <a class="active" href="index">Home</a></li>
-              <li> <a href="volunteer">Volunteer</a></li>
-              <li> <a href="tr">Tips&Recommendations</a></li>
-              <li> <a href="events">Events</a></li>
-              <li> <a href="adopt">Adoption</a></li>
-              <li> <a href="res">Rescue</a></li>
-              <li class="hovering">
-                <a class="dropbtn">Login / Signup ⌄</a>
-                <div class="form-dropdown">
-                  <a href="login">LogIn</a>
-                  <a href="signup">Signup</a>
-                </div>
-              </li>
-            </ul>
-        </div>
-        </div>
-        <div class="title">
-          <h1>ANIMAL HEALTHCARE, RESCUE, AND ADOPTION CENTER</h1>
-        </div>
-        <div class="button">
-          <a href="adopt" class="btn"><b>FIND A PET TO ADOPT</a>
-        </div>
-      </header>
-      <div class="footer"> 
-        <div class="footer-content">
-          <div class="footer-section.about"></div>
-          <div class="footer-section.Connect"></div>
-    
-        </div>
-        
-        <div class="footer-bottom">
-        &copy;2023 Wander Pets Organization. All rights Reserved.
-        <div id="google_translate_element"></div>
+<html xmlns:th="https://www.thymeleaf.org" lang="en" dir="ltr">
 
-        <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-        </script>
-        
-        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Pets |Home</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<style>
+  a {
+    color: black;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+
+  a:hover {
+    text-decoration: none;
+    color: #F94688;
+  }
+
+
+  a:active {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a,
+  a:hover,
+  a:visited,
+  a:link,
+  a:active {
+    text-decoration: none;
+  }
+</style>
+
+<body>
+  <header>
+    <!-- <div class="banner">
+      <div class="banner_content">
       </div>
+    </div>-->
 
-      <script src="script.js"></script>
-    </body>
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="8f3f634f-5c6a-418d-b8d2-e73c72b3a7d0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-    </html>
+    <div class="container">
+      <div class="search">
+        <input type="search" placeholder="Search">
+        <i class="uil uil-search search-icon"></i>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li> <a class="active" href="index">Home</a></li>
+          <li> <a href="volunteer">Volunteer</a></li>
+          <li> <a href="tr">Tips&Recommendations</a></li>
+          <li> <a href="events">Events</a></li>
+          <li> <a href="adopt">Adoption</a></li>
+          <li> <a href="res">Rescue</a></li>
+          <li class="hovering">
+            <a class="dropbtn">Login / Signup ⌄</a>
+            <div class="form-dropdown">
+              <a href="login">LogIn</a>
+              <a href="signup">Signup</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="title">
+      <h1>ANIMAL HEALTHCARE, RESCUE, AND ADOPTION CENTER</h1>
+    </div>
+    <div class="button">
+      <a href="adopt" class="btn"><b>FIND A PET TO ADOPT</a>
+    </div>
+
+  </header>
+  <footer>
+    <div class="row">
+      <div class="col">
+        <h2> WANDER PETS</h2>
+        
+        <div class="address" <p>
+          G/F Rainbow Building, 1624 P I Y Margal Street, Sampaloc, Metro Manila
+          </p>
+        </div>
+        <p class="contact"> <i class="uil uil-phone"></i> +639 216 6570 32</p>
+        <p class="email-id"> <i class="uil uil-envelope"> </i> WanderPets@gmail.com</p>
+      </div>
+      <div class="Connect">
+        <h3> Connect With Other Organizations</h3>
+        
+        <ul>
+          <li><a href="https://www.facebook.com/PUPSintangPusa/">PUP Sintang Pusa</a></li>
+          <li><a href="https://akf.org.ph/">Animal Kingdom Foundation</a></li>
+          <li><a href="https://straysworthsaving.org/">Strays Worth Saving (SWS)</a></li>
+          <li><a href="https://www.facebook.com/GuardiansOfTheFur/">Guardians of the fur</a></li>
+          <li><a href="https://paws.org.ph/">Philippine Animal Welfare Society (PAWS)</a></li>
+          <li><a href="https://www.petaasia.com/">People for the Ethical Treatment of Animals (PETA) Asia-Pacific</a>
+          </li>
+        </ul>
+      </div>
+      <div class="info">
+        <h3>About Us</h3>
+        <p>Our Story</p>
+        <p>Our Team</p>
+      </div>
+      <div class="social">
+        <h3>FOLLOW US</h3>
+        <i class="fab uil uil-instagram-alt"></i>
+        <i class="fab uil uil-facebook"></i>
+        <i class="fab uil uil-twitter"></i>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright"> &copy 2023 Wander Pets Organizations. All rights reserved. </p>
+    <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

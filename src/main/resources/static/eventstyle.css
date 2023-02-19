@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: calibri;
+    font-family: Helvetica;
   }
   
   header{
@@ -152,7 +152,7 @@
     border: none; 
     background-color: #Ffff;
     font-size: 16px;
-    font-family: calibri;
+    font-family: Helvetica;
     width: 330px;
     outline: none;
   }
@@ -237,7 +237,7 @@
     position: absolute;
     font-size: 45px;
     font-style: normal;
-    font-family: calibri;
+    font-family: Helvetica;
     font-weight: 600;
     text-transform: capitalize;
   }
@@ -249,7 +249,7 @@
     position: absolute;
     font-size: 45px;
     font-style: normal;
-    font-family: calibri;
+    font-family: Helvetica;
     font-weight: 600;
     text-transform: capitalize;
   }
