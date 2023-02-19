@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wander Pets | Tips & Recommendations</title>
+  <link href="trstyle.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="search">
+        <input type="search" placeholder="Search">
+        <i class="uil uil-search search-icon"></i>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li> <a  href="index">Home</a></li>
+          <li> <a href="volunteer">Volunteer</a></li>
+          <li> <a class="active" href="tr">Tips&Recommendations</a></li>
+          <li> <a href="events">Events</a></li>
+          <li> <a href="adopt">Adoption</a></li>
+          <li> <a href="res">Rescue</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="tr-contents">
+
+    <!-- Pets -->
+    <div class="pets box" id="pets">
+      <h3 class="label size">
+        <i class="fa-solid fa-paw"></i>
+        PETS
+      </h3>
+      <ul class="menu">
+        <li onclick="change_Dog()" class="petslabel clickeds">
+          <a href="#" class="red">
+            <i class="fa-solid fa-dog"></i>
+            Dogs
+          </a>
+        </li>
+        <li onclick="change_Cat()" class="petslabel">
+          <a href="#" class="">
+            <i class="fa-solid fa-cat"></i>
+            Cats
+          </a>
+        </li>
+        <li onclick="change_Bird()" class="petslabel">
+          <a href="#" class="">
+            <i class="fa-solid fa-dove"></i>
+            Birds
+          </a>
+        </li>
+        <li onclick="change_Fish()" class="petslabel">
+          <a href="#" class="">
+            <i class="fa-solid fa-fish"></i>
+            Fishes
+          </a>
+        </li>
+      </ul>   
+    </div>
+
+    <!-- Tips & Recommendations -->
+    <div class="tips-n-reco box">
+      <h3 class="label size">
+        <i class="fa-solid fa-lightbulb"></i>
+        TIPS
+      </h3>
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/dos.png" class="icontr">
+          <span class="right">Do's</span> 
+        </div>
+      </button>
+      <div class="content">
+        <ul class="circle" id="DogDos">
+          <li>Do keep your dog under effective controls</li>
+          <li>Do attend regular dog training classes</li>
+          <li>Do clean up after your dog</li>
+          <li>Do exercise your dog regularly</li>
+          <li>Do keep your dog fed and groomed</li>
+          <li>Don't leave your dog unattended in a vehicle</li>
+          <li>Do teach your children and others how to interact with your dog</li>
+        </ul> 
+      </div>
+
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/donts.png" class="icontr">
+          <span class="right">Don'ts</span> 
+        </div>
+      </button>
+      <div class="content" id="DogDonts">
+        <ul class="circle">
+          <li>Don't take your dog to places they are explicitly barred</li>
+          <li>Don’t overfed</li>
+          <li>Don’t Skip Regular Vet Visits</li>
+          <li>Don’t let them near to heat-absorbing surfaces like metal or asphalt.</li>
+          <li>Don’t feed your pets with excessive treats as it may fill them but will not be providing the nutrition needed by their body</li>
+        </ul>  
+      </div>
+
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/proper-training.png" class="icontr">
+          <span class="right">Proper Training</span> 
+        </div>
+      </button>
+      <div class="content">
+        <p id="DogPT"> 
+          There are two common methods of training a dog.<br><br>
+          The first is the aversive-based method. The second is the reward-based method. Aversive-based (discipline) training is when you use positive punishment and negative reinforcement techniques with your dog. Reward-based methods use rewards only for the behaviors that you want your dog to follow.<br><br>
+          Aversive-based training uses techniques like loud, unpleasant noises, physical corrections, and harsh scoldings to get your dog to act the way you want. On the other hand, reward-based training uses rewards whenever your dog does something you want it to do. Treats, belly rubs, or other dog-pleasing actions are used to reinforce that a behavior was good.   
+        </p>  
+      </div>
+
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/grooming.png" class="icontr">
+          <span class="right">Grooming</span> 
+        </div>
+      </button>
+      <div class="content">
+        <p id="DogGrooming">Dr. Jamie Richardson, chief of staff at Small Door Veterinary, recommends bathing your dog no more than once a month (unless it comes in contact with a skunk or has a medical condition). Otherwise you risk drying out its skin. When it is time for a bath, Samantha Schwab, a resident pet expert at Chewy, likes the Booster Bath grooming center. She calls it “the ultimate bathing experience without stepping foot inside a groomer’s.” This portable tub takes as much stress and anxiety as possible out of bathing: It comes with a safety harness that gently holds your pet in place, while you get 360-degree access to wash every inch of it quickly and painlessly — which you certainly can’t do in your kitchen sink. The tub also comes in three sizes to fit a variety of breeds.
+        </p> 
+      </div>
+
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/feeding.png" class="icontr">
+          <span class="right">Feeding</span> 
+        </div>
+      </button>
+      <div class="content">
+        <p id="DogFeeding">Puppies need small, frequent feedings. For the first few months of a puppy’s life, they will need small meals of food throughout the day as they transition from their mother’s milk to solid food. Starting around four months, puppies can begin eating about three times a day, and after that, puppies will quickly graduate to twice-a-day feedings.<br><br>
+          Don’t let your dog trick you into more mealtimes with adorable puppy dog eyes. Most dogs only require two meals a day, but if you catch your dog begging, an occasional healthy treat can help.<br><br>
+        </p> 
+      </div>
+
+      <h3 class="label size">
+        <i class="fa-solid fa-star"></i>
+        RECOMMENDATIONS
+      </h3>
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/food.png" class="icontr">
+          <span class="right">Foods</span> 
+        </div>
+      </button>
+      <div class="content" id="DogFood">
+        Many owners like to feed a raw meat diet to their dogs, and while this can suit some dogs very well, there are some important considerations you need to be aware of. Experienced vet Dr Leigh Davidson suggests the following.
+        <ul class="circle">
+          <li>Choose human-grade meat as some pet meat and bone products will contain preservatives that can be bad for your dog’s health.</li>
+          <li>Practice impeccable food hygiene as the risk of both you and your dog getting a food-borne bacterial infection such as campylobacter or salmonella is high.</li>
+          <li>Have a veterinary nutritionist formulate the diet for you. Many raw diets are not balanced appropriately for stage of life or medical conditions.</li>
+        </ul>
+      </div>
+
+      <button class="collapsible">
+        <div class="center">
+          <img src="images/tr/meds.png" class="icontr">
+          <span class="right">Medicine</span> 
+        </div>
+      </button>
+      <div class="content" id="DogMeds">
+        Over-the-Counter (OTC) Medications That Can be Safe for Dogs
+        <ul class="circle">
+          <li>Antihistamines. Diphenhydramine (Benadryl®), cetirizine (Zyrtec®), and loratadine (Claritin®)</li>
+          <li>Antidiarrheals/Antinauseants. Bismuth subsalicylate (Pepto-Bismol®)</li>
+          <li>Loperamide (Imodium®)</li>
+          <li>Famotidine (Pepcid AC®) and cimetidine (Tagamet®)</li>
+          <li>Steroid sprays, gels, and creams</li>
+          <li>Topical antibiotic ointment. Neosporin®</li>
+          <li>Anti-fungal sprays, gels, and creams</li>
+          <li>Hydrogen peroxide</li>
+          <li>Mineral oil</li>
+          <li>Artificial tears</li>
+        </ul>  
+      </div>
+
+    </div>
+    
+  </div>
+
+  
+
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section.about"></div>
+      <div class="footer-section.Connect"></div>
+
+    </div>
+
+    <div class="footer-bottom">
+      &copy;2023 Wander Pets Organization. All rights Reserved.
+    </div>
+  </div>
+  <script src="trscript.js"></script>
+  <script>
+    // Active in Pets section
+    var a = document.querySelectorAll(".menu a");
+    for (var i = 0, length = a.length; i < length; i++) {
+      a[i].onclick = function() {
+        var b = document.querySelector(".menu li.clickeds");
+        var c = document.querySelector(".menu a.red");
+        if (b) {
+          b.classList.remove("clickeds");
+        }
+        if (c) {
+          c.classList.remove("red");
+        }
+        this.parentNode.classList.add("clickeds");
+        this.classList.add("red");
+      };
+    }
+
+    // collabsible
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("collapsed");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+        
+  </script>
+  <script src="https://kit.fontawesome.com/8dede97943.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
