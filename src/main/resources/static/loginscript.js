@@ -1,9 +1,8 @@
-/* YOU DONT NEED THESE, these are just for the popup you see */
-function closeTreactPopup(){ 
-    document.querySelector(".treact-popup").classList.add("hidden");
-  }
-  function openTreactPopup(){ 
-    document.querySelector(".treact-popup").classList.remove("hidden");
-  }
-  document.querySelector(".close-treact-popup").addEventListener("click", closeTreactPopup);
-  setTimeout(openTreactPopup, 3000)
+document.getElementById("login").addEventListener("submit", (event) => {
+  event.preventDefault()
+  const username = document.getElementById("username").value;
+
+  localStorage.setItem("username", username);
+
+  window.location.href = './res';
+})

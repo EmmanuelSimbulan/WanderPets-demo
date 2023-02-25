@@ -1,10 +1,8 @@
-navbar = document.querySelector(".navbar").querySelectorAll("a");
-console.log(navbar);
+document.getElementById("login").addEventListener("submit", (event) => {
+  event.preventDefault()
+  const username = document.getElementById("username").value;
 
-navbar.forEach(element => {
-  element.addEventListener("click", function(){
-  navbar.forEach(nav=>nav.classList.remove("active"))
+  localStorage.setItem("username", username);
 
-    this.classList.add("active");
+  window.location.href = 'index.html';
 })
-});

@@ -6,7 +6,7 @@
   }
   
   header{
-    background-color: #ffff;
+    background-color: #FFF2F2;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -73,34 +73,23 @@
   }
   
   .container{
-    background: #FFF1F1;
+    background: #ffff;
     height: 60px;
     width: auto;
+    border-bottom: .5px solid #FFF2F2;
   } 
-  
+
   .container .navbar ul li a.active{
     text-decoration: underline;
     color: #F94688;
   }
   ul li a:hover{
+
     color: #F94688;
   }
   
   .main{
     margin: auto;
-  }
-  
-  .title{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    text-align: center;
-    line-height: 1.5cm; 
-    transform: translate(-50%,-50%);
-  }
-  .title h1{
-    color: #C57D7D; 
-    font-size: 65px;
   }
   
   .button{
